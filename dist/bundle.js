@@ -19626,30 +19626,28 @@ module.exports = require('./lib/React');
 
 },{"./lib/React":43}],162:[function(require,module,exports){
 var React = require('react');
+var Navigation = require('./navigation.jsx');
 
 var Background = React.createClass({displayName: "Background",
     render: function() {
-        return (React.createElement("div", {id: "background"}));
+        return (React.createElement("div", {id: "background"}, React.createElement(Navigation, null)));
     }
 });
 
 module.exports = Background;
 
 
-},{"react":161}],163:[function(require,module,exports){
+},{"./navigation.jsx":164,"react":161}],163:[function(require,module,exports){
 var React = require('react');
 var Background = require('./background.jsx');
-var Navigation = require('./navigation.jsx');
 
 (function(window) {
-    var root = window.document.createElement("div");
-    root.id = "root";
-    window.document.body.appendChild(root);
+    var root = window.document.getElementById("root");
     React.render(React.createElement(Background, null), root);
 })(window);
 
 
-},{"./background.jsx":162,"./navigation.jsx":164,"react":161}],164:[function(require,module,exports){
+},{"./background.jsx":162,"react":161}],164:[function(require,module,exports){
 var React = require('react');
 var Navbar = require('react-bootstrap/Navbar');
 var Nav = require('react-bootstrap/Nav');
