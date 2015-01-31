@@ -1,17 +1,18 @@
 var React = require('react');
-var Navbar = require('react-bootstrap/Navbar');
-var Nav = require('react-bootstrap/Nav');
-var NavItem = require('react-bootstrap/NavItem');
+var Grid = require('react-bootstrap/Grid');
+var Row = require('react-bootstrap/Row');
+var Col = require('react-bootstrap/Col');
 
 var Navigation = React.createClass({
     render: function() {
         return (<div>
-            <Navbar>
-                <Nav stacked>
-                    <NavItem>About</NavItem>
-                    <NavItem>Links</NavItem>
-                </Nav>
-            </Navbar>
+            <Grid className="navigation">
+                <Row>
+                    <Col>Teams</Col>
+                    <Col>Games</Col>
+                    <Col>Agenda</Col>
+                </Row>
+            </Grid>
         </div>);
     }
 });

@@ -1,11 +1,17 @@
 var React = require('react');
+var Title = require('./title.jsx');
 var Navigation = require('./navigation.jsx');
+var Content = require('./content.jsx');
+var ContactInfo = require('./contact-info.jsx');
 
 var Background = React.createClass({
     render: function() {
         return (<div id="background">
-                    <Navigation />
-                </div>);
+            <Title />
+            <Navigation />
+            <Content />
+            <ContactInfo />
+        </div>);
     }
 });
 

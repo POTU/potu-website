@@ -24,15 +24,28 @@
 
 }
 
-body {
-    font-family: 'breamcatcher', 'Helvetica', sans-serif;
-    font-size: 50pt;
-}
-
 #background {
+    position: relative;
     width: 900px;
     height: 600px;
     background-image: url('../img/background.png');
     margin-left: auto;
     margin-right: auto;
+}
+
+.title {
+    font-family: 'another_typewriter', 'Helvetica', sans-serif;
+    position: absolute;
+    left: 450px;
+    top: 90px;
+}
+
+.navigation {
+    font-family: 'breamcatcher', 'Helvetica', sans-serif;
+    font-size: 42pt;
+    width: 100px;
+    height: 200px;
+    position: absolute;
+    left: 85px;
+    top: 125px;
 }
