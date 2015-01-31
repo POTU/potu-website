@@ -1,10 +1,10 @@
 var React = require('react');
 
-var Navigation = React.createClass({
+var Content = React.createClass({
     render: function() {
-        return (<div>
+        return (<div className="content">
         </div>);
     }
 });
 
-module.exports = Navigation;
+module.exports = Content;

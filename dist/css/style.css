@@ -49,3 +49,17 @@
     left: 85px;
     top: 125px;
 }
+
+.content {
+    width: 500px;
+    height: 370px;
+    position: absolute;
+    left: 240px;
+    top: 160px;
+}
+
+.contact-info {
+    position: absolute;
+    left: 420px;
+    top: 550px;
+}

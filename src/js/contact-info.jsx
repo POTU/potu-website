@@ -1,10 +1,11 @@
 var React = require('react');
 
-var Navigation = React.createClass({
+var ContactInfo = React.createClass({
     render: function() {
-        return (<div>
+        return (<div className="contact-info">
+            To contact us, call 020202
         </div>);
     }
 });
 
-module.exports = Navigation;
+module.exports = ContactInfo;

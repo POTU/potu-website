@@ -18768,27 +18768,28 @@ module.exports = Background;
 },{"./contact-info.jsx":155,"./content.jsx":156,"./navigation.jsx":158,"./title.jsx":159,"react":153}],155:[function(require,module,exports){
 var React = require('react');
 
-var Navigation = React.createClass({displayName: "Navigation",
+var ContactInfo = React.createClass({displayName: "ContactInfo",
     render: function() {
-        return (React.createElement("div", null
+        return (React.createElement("div", {className: "contact-info"}, 
+            "To contact us, call 020202"
         ));
     }
 });
 
-module.exports = Navigation;
+module.exports = ContactInfo;
 
 
 },{"react":153}],156:[function(require,module,exports){
 var React = require('react');
 
-var Navigation = React.createClass({displayName: "Navigation",
+var Content = React.createClass({displayName: "Content",
     render: function() {
-        return (React.createElement("div", null
+        return (React.createElement("div", {className: "content"}
         ));
     }
 });
 
-module.exports = Navigation;
+module.exports = Content;
 
 
 },{"react":153}],157:[function(require,module,exports){
@@ -18827,7 +18828,7 @@ module.exports = Navigation;
 },{"react":153,"react-bootstrap/Col":2,"react-bootstrap/Grid":3,"react-bootstrap/Row":4}],159:[function(require,module,exports){
 var React = require('react');
 
-var Navigation = React.createClass({displayName: "Navigation",
+var Title = React.createClass({displayName: "Title",
     render: function() {
         return (React.createElement("div", {className: "title"}, 
             React.createElement("h1", null, "POTU")
@@ -18835,7 +18836,7 @@ var Navigation = React.createClass({displayName: "Navigation",
     }
 });
 
-module.exports = Navigation;
+module.exports = Title;
 
 
 },{"react":153}]},{},[157]);
