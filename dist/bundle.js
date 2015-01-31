@@ -19626,17 +19626,30 @@ module.exports = require('./lib/React');
 
 },{"./lib/React":43}],162:[function(require,module,exports){
 var React = require('react');
+
+var Background = React.createClass({displayName: "Background",
+    render: function() {
+        return (React.createElement("div", {id: "background"}));
+    }
+});
+
+module.exports = Background;
+
+
+},{"react":161}],163:[function(require,module,exports){
+var React = require('react');
+var Background = require('./background.jsx');
 var Navigation = require('./navigation.jsx');
 
 (function(window) {
     var root = window.document.createElement("div");
     root.id = "root";
     window.document.body.appendChild(root);
-    React.render(React.createElement(Navigation, null), root);
+    React.render(React.createElement(Background, null), root);
 })(window);
 
 
-},{"./navigation.jsx":163,"react":161}],163:[function(require,module,exports){
+},{"./background.jsx":162,"./navigation.jsx":164,"react":161}],164:[function(require,module,exports){
 var React = require('react');
 var Navbar = require('react-bootstrap/Navbar');
 var Nav = require('react-bootstrap/Nav');
@@ -19658,4 +19671,4 @@ var Navigation = React.createClass({displayName: "Navigation",
 module.exports = Navigation;
 
 
-},{"react":161,"react-bootstrap/Nav":4,"react-bootstrap/NavItem":5,"react-bootstrap/Navbar":6}]},{},[162]);
+},{"react":161,"react-bootstrap/Nav":4,"react-bootstrap/NavItem":5,"react-bootstrap/Navbar":6}]},{},[163]);

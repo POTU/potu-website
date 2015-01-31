@@ -28,3 +28,11 @@ body {
     font-family: 'breamcatcher', 'Helvetica', sans-serif;
     font-size: 50pt;
 }
+
+#background {
+    width: 900px;
+    height: 600px;
+    background-image: url('../img/background.png');
+    margin-left: auto;
+    margin-right: auto;
+}
