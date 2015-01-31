@@ -1,0 +1,24 @@
+{
+  "name": "potu-website",
+  "version": "1.0.0",
+  "description": "POTU website\r ============",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orasimus/potu-website"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/orasimus/potu-website/issues"
+  },
+  "homepage": "https://github.com/orasimus/potu-website",
+  "dependencies": {
+    "browserify": "^8.1.1",
+    "react": "^0.12.2",
+    "react-bootstrap": "^0.13.3"
+  }
+}
