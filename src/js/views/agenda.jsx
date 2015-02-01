@@ -6,4 +6,4 @@ var Agenda = React.createClass({
     }
 });
 
-module.export = Agenda;
+module.exports = Agenda;

@@ -24023,7 +24023,8 @@ var React = require('react');
 
 var Content = React.createClass({displayName: "Content",
     render: function() {
-        return (React.createElement("div", {className: "content"}
+        return (React.createElement("div", {className: "content"}, 
+            this.props.children
         ));
     }
 });
@@ -24110,7 +24111,7 @@ var Agenda = React.createClass({displayName: "Agenda",
     }
 });
 
-module.export = Agenda;
+module.exports = Agenda;
 
 
 },{"react":201}],209:[function(require,module,exports){
@@ -24122,7 +24123,7 @@ var Games = React.createClass({displayName: "Games",
     }
 });
 
-module.export = Games;
+module.exports = Games;
 
 
 },{"react":201}],210:[function(require,module,exports){
@@ -24134,7 +24135,7 @@ var Teams = React.createClass({displayName: "Teams",
     }
 });
 
-module.export = Teams;
+module.exports = Teams;
 
 
 },{"react":201}]},{},[205]);

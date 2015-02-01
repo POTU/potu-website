@@ -6,4 +6,4 @@ var Games = React.createClass({
     }
 });
 
-module.export = Games;
+module.exports = Games;

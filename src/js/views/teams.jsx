@@ -6,4 +6,4 @@ var Teams = React.createClass({
     }
 });
 
-module.export = Teams;
+module.exports = Teams;
