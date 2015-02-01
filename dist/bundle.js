@@ -24107,7 +24107,10 @@ var React = require('react');
 
 var Agenda = React.createClass({displayName: "Agenda",
     render: function () {
-        return (React.createElement("div", null, "Agenda"));
+        return (React.createElement("div", null, 
+            React.createElement("h2", null, "Agenda"), 
+            React.createElement("p", null, "The idea is to do together Game Jam games, once 2-3kk period of time. Learning from each other , develop skills , grown in a bunch of people and have fun ! Each Jam after the mess to be published and will also learn it through things!")
+        ));
     }
 });
 
@@ -24119,7 +24122,12 @@ var React = require('react');
 
 var Games = React.createClass({displayName: "Games",
     render: function () {
-        return (React.createElement("div", null, "Games"));
+        return (React.createElement("div", null, 
+            React.createElement("h2", null, "Games"), 
+            React.createElement("h3", null, "King Leaf"), 
+            React.createElement("p", null, "The first game made by POTU is King Leaf. Sven, the king of the leaves, had his throne stolen by the evil Stick of the Sticks. Sven was ripped from his tree and thrown into a river, where he must now try to survive in order to TAKE BACK HIS THRONE!"), 
+            React.createElement("p", null, "King Leaf was made with cocos2d-x.")
+        ));
     }
 });
 
@@ -24131,7 +24139,15 @@ var React = require('react');
 
 var Teams = React.createClass({displayName: "Teams",
     render: function () {
-        return (React.createElement("div", null, "Teams"));
+        return (React.createElement("div", null, 
+            React.createElement("h2", null, "Teams"), 
+            React.createElement("h3", null, "FakeFish"), 
+            React.createElement("p", null, "FakeFish is making Diablo for tablets."), 
+            React.createElement("h3", null, "Jalomieli"), 
+            React.createElement("p", null, "Jalomieli is the next BioWare."), 
+            React.createElement("h3", null, "Rockodile"), 
+            React.createElement("p", null, "Rockodile... well.")
+        ));
     }
 });
 
