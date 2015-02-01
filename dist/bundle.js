@@ -24042,14 +24042,14 @@ var Background = require('./background.jsx');
 var Teams = require('./views/teams.jsx');
 var Games = require('./views/games.jsx');
 var Agenda = require('./views/agenda.jsx');
-var NotFound = React.createClass({displayName: "NotFound",render: function() {return React.createElement("br", null);}});
+var NotFound = require('./views/not-found.jsx');
 
 (function(window) {
     var root = window.document.getElementById("root");
     
     var routes = (
         React.createElement(Route, {name: "background", handler: Background, path: "/"}, 
-            React.createElement(DefaultRoute, {handler: Background}), 
+            React.createElement(DefaultRoute, {handler: Agenda}), 
             React.createElement(Route, {name: "teams", handler: Teams}), 
             React.createElement(Route, {name: "games", handler: Games}), 
             React.createElement(Route, {name: "agenda", handler: Agenda}), 
@@ -24063,7 +24063,7 @@ var NotFound = React.createClass({displayName: "NotFound",render: function() {re
 })(window);
 
 
-},{"./background.jsx":202,"./views/agenda.jsx":208,"./views/games.jsx":209,"./views/teams.jsx":210,"react":201,"react-router":21}],206:[function(require,module,exports){
+},{"./background.jsx":202,"./views/agenda.jsx":208,"./views/games.jsx":209,"./views/not-found.jsx":210,"./views/teams.jsx":211,"react":201,"react-router":21}],206:[function(require,module,exports){
 var React = require('react');
 var Grid = require('react-bootstrap/Grid');
 var Row = require('react-bootstrap/Row');
@@ -24135,6 +24135,21 @@ module.exports = Games;
 
 
 },{"react":201}],210:[function(require,module,exports){
+var React = require('react');
+
+var NotFound = React.createClass({displayName: "NotFound",
+    render: function() {
+        return (React.createElement("div", null, 
+            React.createElement("h2", null, "Not Found"), 
+            React.createElement("p", null, "The requested page does not exist.")
+        ));
+    }
+});
+
+module.exports = NotFound;
+
+
+},{"react":201}],211:[function(require,module,exports){
 var React = require('react');
 
 var Teams = React.createClass({displayName: "Teams",

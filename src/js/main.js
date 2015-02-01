@@ -7,14 +7,14 @@ var Background = require('./background.jsx');
 var Teams = require('./views/teams.jsx');
 var Games = require('./views/games.jsx');
 var Agenda = require('./views/agenda.jsx');
-var NotFound = React.createClass({render: function() {return <br />;}});
+var NotFound = require('./views/not-found.jsx');
 
 (function(window) {
     var root = window.document.getElementById("root");
     
     var routes = (
         <Route name="background" handler={Background} path="/">
-            <DefaultRoute handler={Background} />
+            <DefaultRoute handler={Agenda} />
             <Route name="teams" handler={Teams} />
             <Route name="games" handler={Games} />
             <Route name="agenda" handler={Agenda} />
