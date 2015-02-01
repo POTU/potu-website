@@ -1,7 +1,9 @@
 var React = require('react');
 
 var Teams = React.createClass({
-    return (<div>Teams</div>);
+    render: function () {
+        return (<div>Teams</div>);
+    }
 });
 
-modules.export = Teams;
+module.export = Teams;

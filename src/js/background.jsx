@@ -1,4 +1,6 @@
 var React = require('react');
+var Router = require('react-router');
+var RouteHandler = Router.RouteHandler;
 var Title = require('./title.jsx');
 var Navigation = require('./navigation.jsx');
 var Content = require('./content.jsx');
@@ -9,7 +11,9 @@ var Background = React.createClass({
         return (<div id="background">
             <Title />
             <Navigation />
-            <Content />
+            <Content>
+                <RouteHandler />
+            </Content>
             <ContactInfo />
         </div>);
     }

@@ -1,7 +1,9 @@
 var React = require('react');
 
 var Games = React.createClass({
-    return (<div>Games</div>);
+    render: function () {
+        return (<div>Games</div>);
+    }
 });
 
-modules.export = Games;
+module.export = Games;
