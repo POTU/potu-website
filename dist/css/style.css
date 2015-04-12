@@ -60,10 +60,18 @@
 
 .contact-info {
     position: absolute;
-    left: 420px;
+    left: 360px;
     top: 550px;
+}
+
+.team {
+    color: #660099;
 }
 
 a {
     color: white;
+}
+
+body {
+	text-align: justify;
 }
